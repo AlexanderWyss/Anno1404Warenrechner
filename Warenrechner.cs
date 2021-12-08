@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Anno1404Warenrechner
@@ -62,6 +63,7 @@ namespace Anno1404Warenrechner
             try
             {
                 var population = PopulationReader.ReadPopulation(this.textBoxProcessName.Text);
+                Debug.WriteLine(population.ToString());
                 var needs = NeedsCalculator.CalculateNeeds(population);
 
                 this.RenderNeeds(needs);

@@ -2,6 +2,6 @@
 {
     class GameAddresses
     {
-        public const int PopulationPointer = 0x12d5a90;
+        public const long PopulationPointer = 0x7FF7A29B7040; //0x7FF7A29B7068 //0x2097040 // 2097068
     }
 }

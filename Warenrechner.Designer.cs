@@ -776,7 +776,7 @@
             this.textBoxProcessName.Name = "textBoxProcessName";
             this.textBoxProcessName.Size = new System.Drawing.Size(251, 20);
             this.textBoxProcessName.TabIndex = 18;
-            this.textBoxProcessName.Text = "Addon.exe";
+            this.textBoxProcessName.Text = "Anno1404Addon.exe";
             // 
             // checkBoxPeriodicCheck
             // 

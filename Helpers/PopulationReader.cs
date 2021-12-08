@@ -19,15 +19,15 @@ namespace Anno1404Warenrechner
                 throw new Exception($"Could not find process with name: {processName}");
             var process = processes[0];
 
-            int baseAddress = MemoryHelper.ReadAddress(process, GameAddresses.PopulationPointer);
+            long baseAddress = MemoryHelper.ReadAddressLong(process, GameAddresses.PopulationPointer);
 
-            population.Beggars = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Beggars);
-            population.Peasants = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Peasants);
-            population.Citizens = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Citizens);
-            population.Patricians = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Patricians);
-            population.Noblemen = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Noblemens);
-            population.Nomads = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Nomads);
-            population.Envoys = MemoryHelper.ReadAddress(process, baseAddress + PopulationOffsets.Envoys);
+            population.Beggars = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Beggars);
+            population.Peasants = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Peasants);
+            population.Citizens = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Citizens);
+            population.Patricians = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Patricians);
+            population.Noblemen = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Noblemens);
+            population.Nomads = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Nomads);
+            population.Envoys = MemoryHelper.ReadAddressInt(process, baseAddress + PopulationOffsets.Envoys);
 
             return population;
         }

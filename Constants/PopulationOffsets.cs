@@ -2,12 +2,12 @@
 {
     static class PopulationOffsets
     {
-        public const int Beggars = 0x7cd8;
-        public const int Peasants = 0x7d78;
-        public const int Citizens = 0x7d98;
-        public const int Patricians = 0x7db8;
-        public const int Noblemens = 0x7dd8;
-        public const int Nomads = 0x7d18;
-        public const int Envoys = 0x7d38;
+        public const int Beggars = 0xEA44;
+        public const int Peasants = 0xEAE4;
+        public const int Citizens = 0xEB04;
+        public const int Patricians = 0xEB24;
+        public const int Noblemens = 0xEB44;
+        public const int Nomads = 0xEA84;
+        public const int Envoys = 0xEAA4;
     }
 }
